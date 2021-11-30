@@ -1,0 +1,145 @@
+$color_principal: #000000;
+$color_secondary: #ffffff;
+$color_details: #d2b293;
+$color_card_detail: #9e9e9e;
+$color_boxshadow: #d1d1d1;
+$color_bg: #ebebeb;
+
+/* HEADER */
+
+.header {
+    background-color: $color_secondary;
+    border-bottom: 1px solid $color_principal;
+
+    /* HEADER LOGO */
+    
+    .header_logo h1 a {
+        color: $color_principal;
+    }
+
+    /* HEADER NAV */
+
+    .header_nav div ul li a {
+        color: $color_principal;
+    }
+
+    .header_nav div ul li a:hover {
+        background-color: $color_details;
+    }
+
+    .header_nav div ul li ul li {
+        color: $color_principal;
+        background-color: $color_boxshadow;
+    }
+
+    .header_nav div ul li ul li:hover {
+        background-color: $color_details;
+    }
+}
+
+/* MAIN INDEX */
+
+.main_index {
+    background-color: $color_secondary;
+
+    /* MAIN INDEX HERO */
+
+    .hero .hero_content h2 {
+        color: $color_secondary;
+    }
+
+    .button a {
+        color: $color_secondary;
+        background-color: $color_details;
+        border: 0.25vw solid $color_secondary;
+    }
+
+    /* MAIN INDEX CARDS */
+
+    .cards_index .card_index {
+        background-color: $color_bg;
+        box-shadow: 3px 8px 10px 5px $color_card_detail;
+    }
+}
+
+/* MAIN PRODUCTS */
+
+.main_products {
+    background-color: $color_secondary;
+
+    /* SEARCHER */
+
+    .searcher {
+        background-color: $color_secondary;
+
+        div {
+            background-color: $color_bg;
+            border: 1px solid $color_principal;
+
+            input {
+                background-color: $color_bg;
+            }
+
+            h5 {
+                color: $color_principal;
+            }
+        }
+    }
+
+    /* CARDS PRODUCTS */
+
+    .cards_products {
+        background-color: $color_secondary;
+
+        .card_products {
+            background-color: $color_bg;
+            box-shadow: 3px 8px 10px 5px $color_card_detail;
+        }
+    }
+}
+
+/* MAIN QUESTIONS */
+
+.main_questions {
+    background-color: $color_secondary;
+
+    .questions {
+        background-color: $color_bg;
+    }
+}
+
+/* MAIN CONTACT */
+
+.main_contact {
+    background-color: $color_secondary;
+
+    .contact_content {
+        background-color: $color_bg;
+    }
+}
+
+/* MAIN ABOUT US*/
+
+.main_aboutus {
+    background-color: $color_secondary;
+
+    .aboutus_content {
+        background-color: $color_bg;
+    }
+}
+
+/* HR */
+
+main hr {
+    background-image: linear-gradient(to left, $color_boxshadow, $color_principal, $color_boxshadow);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: $color_secondary;
+
+    .footer_info h4 {
+        color: $color_principal;
+    }
+}

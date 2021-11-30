@@ -1,0 +1,114 @@
+.main_products {
+    grid-area: main;
+    display: grid;
+    overflow: hidden;
+    grid-template-areas:
+        "searcher"
+        "cards_products"
+        "bar ";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, max-content);
+
+    .searcher {
+        grid-area: searcher;
+        display: flex;
+        padding: 1vw;
+        justify-content: center;
+
+        div {
+            display: grid;
+            width: 55vh;
+            grid-template-areas: "photo search btn_search";
+            grid-template-columns: 1fr max-content 1fr;
+            grid-template-rows: max-content;
+            padding: 0.5vw;
+            justify-items: center;
+            align-items: center;
+
+            img {
+                grid-area: photo;
+                width: calc(12px + 0.75vw);
+                height: calc(12px + 0.75vw);
+            }
+
+            input {
+                grid-area: search;
+                border: none;
+                text-align: center;
+            }
+
+            h5 {
+                grid-area: btn_search;
+                margin: 0px;
+            }
+        }
+    }
+
+    .cards_products {
+        grid-area: cards_products;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 5vw 2vw;
+        padding: 3vw 12vw;
+        justify-items: center;
+        align-items: center;
+
+        .card_products {
+            height: 400px;
+            width: 250px;
+            display: grid;
+            grid-template-areas:
+                "card_products_photo"
+                "card_products_title"
+                "card_products_text";
+            grid-template-columns: 100%;
+            grid-template-rows: 45% 15% 40%;
+            align-items: center;
+            justify-items: center;
+            padding: 0.5vw;
+        
+            .card_products_photo {
+                grid-area: card_products_photo;
+
+                img {
+                    height: 125px;
+                    width: 125px;
+                }
+            }
+            
+            .card_products_title {
+                grid-area: card_products_title;
+                text-align: center;
+            }
+            
+            .card_products_text {
+                grid-area: card_products_text;
+            
+                p {
+                    text-align: justify;
+                    justify-content: center;
+                    align-content: center;
+                    padding: 0vw 1vh;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

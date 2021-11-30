@@ -1,0 +1,42 @@
+.footer {
+    grid-area: footer;
+    width: 100vw;
+    display: grid;
+    overflow: hidden;
+    grid-template-areas: "footer_socialmedia footer_info footer_payment";
+    grid-template-columns: 70px max-content 70px;
+    grid-template-rows: max-content;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    padding: 1vh 0vh;
+
+    .footer_socialmedia {
+        grid-area: footer_socialmedia;
+    
+        img {
+            width: calc(10px + 0.75vw);
+            height: calc(10px + 0.75vw);
+        }
+    }
+
+    .footer_info {
+        grid-area: footer_info;
+        text-align: center;
+    
+        h4 {
+            margin: 1vh 0vh;
+        }
+    }
+
+    .footer_payment {
+        grid-area: footer_payment;
+        text-align: center;
+    
+        img {
+            width: calc(10px + 0.75vw);
+            height: calc(10px + 0.75vw);
+        }
+    }
+}

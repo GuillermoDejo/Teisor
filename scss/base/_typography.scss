@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300;400;700&family=Oswald:wght@500&family=Wire+One&display=swap");
+
+$font_header: "Open Sans", sans-serif;
+$font_text: "Abel", sans-serif;
+$font_footer: "Wire One", sans-serif;
+$font_additionals: "Oswald", sans-serif;
+
+/* HEADER */
+
+/* HEADER LOGO */
+
+.header_logo h1 a {
+    font-family: $font_header;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+/* HEADER NAV */
+
+.header_nav div ul li a {
+    font-family: $font_header;
+    font-size: calc(0.6em + 0.2vw);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.header_nav div ul li ul li {
+    font-family: $font_header;
+    font-size: calc(0.6em + 0.2vw);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+/* MAIN INDEX */
+
+/* MAIN INDEX HERO */
+
+.main_index .hero .hero_content h2 {
+    font-family: $font_additionals;
+    font-size: 4vw;
+}
+
+.main_index .button a {
+    font-family: $font_additionals;
+    font-size: calc(0.72em + 0.2vw);
+    text-transform: uppercase;
+}
+
+/* MAIN INDEX CARDS */
+
+.main_index .cards_index .card_index {
+    font-family: $font_additionals;
+    font-size: calc(0.75em + 0.2vw);
+}
+
+/* MAIN PRODUCTS */
+
+/* SEARCHER */
+
+.main_products .searcher div input {
+    font-family: $font_text;
+    font-size: calc(0.6em + 0.75vw);
+}
+
+.main_products .searcher div h5 {
+    font-family: $font_additionals;
+    font-weight: bold;
+    font-size: calc(0.6em + 0.75vw);
+    text-transform: uppercase;
+}
+
+/* CARD PRODUCTS */
+
+.main_products .cards_products .card_products {
+    font-family: $font_additionals;
+    font-size: calc(0.75em + 0.2vw);
+
+    .card_products_text {
+        font-family: $font_text;
+        font-size: calc(0.65em + 0.4vw);
+    }
+}
+
+/* MAIN QUESTIONS */
+
+.main_questions .questions {
+    font-family: $font_text;
+
+    .accordion h2 {
+        font-size: larger;
+        font-weight:bolder;
+    }
+}
+
+/* MAIN CONTACT */
+
+.main_contact .contact_content {
+    font-family: $font_text;
+}
+
+/* MAIN ABOUT US*/
+
+.main_aboutus .aboutus_content {
+    font-family: $font_text;
+    font-size: calc(0.4em + 0.9vw);
+}
+
+/* FOOTER */
+
+.footer .footer_info h4 {
+    font-family: $font_footer;
+    font-size: calc(0.6em + 0.75vw);
+    font-weight: lighter;
+}

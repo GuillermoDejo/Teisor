@@ -1,0 +1,76 @@
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "nav";
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(2, fit-content);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    /* HEADER LOGO */
+
+    .header_logo {
+        grid-area: logo;
+        display: grid;
+        grid-template-areas: ". title .";
+        grid-template-columns: 1fr max-content 1fr;
+
+        h1 {
+            grid-area: title;
+            cursor: pointer;
+            padding-top: 0.5vh;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    /* HEADER NAV */
+
+    .header_nav {
+        grid-area: nav;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        div ul {
+            padding: 0px;
+            margin: 0vh 0vh 1vh 0vh;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    padding-right: 0.15vw;
+                    padding-left: 0.15vw;
+                }
+
+                ul {
+                    display: none;
+                    position: absolute;
+
+                    li {
+                        text-decoration: none;
+                        cursor: pointer;
+                        display: block;
+                        padding: 0.6vh;
+                    }
+                }
+            }
+
+            li:hover ul {
+                display: block;
+            }
+        }
+    }
+}

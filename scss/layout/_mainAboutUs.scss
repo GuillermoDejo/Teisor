@@ -1,0 +1,66 @@
+.main_aboutus {
+    grid-area: main;
+    display: grid;
+    overflow: hidden;
+    grid-template-areas:
+        "aboutus_content"
+        "bar";
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(2, max-content);
+
+    .aboutus_content {
+        grid-area: aboutus_content;
+        padding: 3vw 15vw;
+
+        .aboutus_photo {
+            display: flex;
+            justify-content: flex-start;
+            align-content: flex-start;
+        
+            img {
+                height: 350px;
+                width: 350px;
+                margin-top: 4vw;
+            }
+        }
+        
+        .aboutus_text {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .carrousel {
+            div img {
+                height: 400px;
+                width: 100%;
+                padding: 2vh 0vh;
+            }
+        }
+        
+        .work_text {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        
+            p {
+                margin: 0px;
+            }
+        }
+        
+        .work_photo {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        
+            img {
+                height: 350px;
+                width: 350px;
+                margin-bottom: 1vw;
+            }
+        }
+    }    
+}
+

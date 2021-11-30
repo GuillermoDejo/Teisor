@@ -1,0 +1,23 @@
+.main_questions {
+    grid-area: main;
+    display: grid;
+    overflow: hidden;
+    grid-template-areas:
+        "questions"
+        "bar";
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(2, max-content);
+
+    .questions {
+        grid-area: questions;
+        padding: 3vw 15vw;
+        z-index: 1;
+    
+        .accordion h2 {
+            padding: 1vh;
+        }
+    }
+}
+
+
+

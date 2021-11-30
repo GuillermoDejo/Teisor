@@ -1,0 +1,32 @@
+.main_contact {
+    grid-area: main;
+    display: grid;
+    overflow: hidden;
+    grid-template-areas:
+        "content"
+        "bar";
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(2, max-content);
+
+    .contact_content {
+        grid-area: content;
+        padding: 3vw 15vw;
+    
+        .map {
+            margin-top: 2em;
+            text-align: center;
+        
+            iframe {
+                height: 50vh;
+                width: 50vw;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

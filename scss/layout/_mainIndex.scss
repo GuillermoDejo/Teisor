@@ -1,0 +1,94 @@
+.main_index {
+    grid-area: main;
+    display: grid;
+    overflow: hidden;
+    grid-template-areas:
+        "hero"
+        "cardsIndex"
+        "bar";
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(3, max-content);
+
+    .hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-areas:
+            ". . ."
+            ". . heroContent";
+        grid-template-columns: 1fr 1fr max-content;
+        grid-template-rows: 1fr max-content;
+        height: 41.9vw;
+        background-image: url(../images/principal.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        .hero_content {
+            grid-area: heroContent;
+            display: grid;
+            grid-template-areas:
+                "message message message"
+                "btn . .";
+            grid-template-columns: max-content max-content max-content;
+            grid-template-rows: max-content max-content;
+            padding: 1.25vw;
+        
+            h2 {
+                grid-area: message;
+            }
+        }
+    }
+
+    .button {
+        grid-area: btn;
+        margin: 0px;
+        
+        a {
+            text-decoration: none;
+            padding: 0vw 0.5vh;
+        }
+    }    
+    
+    .cards_index {
+        grid-area: cardsIndex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 5vw 2vw;
+        padding: 3vw 2vw;
+        margin: 1vw 4%;
+        justify-items: center;
+        align-items: center;
+    
+        .card_index {
+            height: 350px;
+            width: 250px;
+            display: grid;
+            grid-template-areas:
+                "cardIndexPhoto"
+                "cardIndexTitle"
+                "cardIndexBtn";
+            grid-template-columns: 100%;
+            grid-template-rows: 55% 30% 15%;
+            align-items: center;
+            justify-items: center;
+            padding: 0.5vw;
+            
+            .card_index_photo {
+                grid-area: cardIndexPhoto;
+            
+                img {
+                    height: 125px;
+                    width: 125px;
+                }
+            }
+            
+            .card_index_title {
+                grid-area: cardIndexTitle;
+                text-align: center;
+            }
+            
+            .button {
+                grid-area: cardIndexBtn;
+            }
+        }    
+    }
+}
