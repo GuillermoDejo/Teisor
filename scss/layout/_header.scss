@@ -1,3 +1,5 @@
+/* HEADER */
+
 .header {
     grid-area: header;
     display: grid;
@@ -11,8 +13,8 @@
     left: 0;
     right: 0;
     z-index: 2;
-
-    /* HEADER LOGO */
+    background-color: $color_secondary;
+    border-bottom: 1px solid $color_principal;
 
     .header_logo {
         grid-area: logo;
@@ -26,12 +28,18 @@
             padding-top: 0.5vh;
 
             a {
+                font-family: $font_header;
+                text-transform: uppercase;
+                font-weight: bolder;
+                color: $color_principal;
                 text-decoration: none;
             }
         }
-    }
 
-    /* HEADER NAV */
+        h1:hover {
+            transform: scale(1.25,1.25);
+        }
+    }
 
     .header_nav {
         grid-area: nav;
@@ -49,10 +57,19 @@
                 position: relative;
 
                 a {
+                    font-family: $font_header;
+                    font-size: calc(0.6em + 0.2vw);
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: $color_principal;
                     text-decoration: none;
                     cursor: pointer;
                     padding-right: 0.15vw;
                     padding-left: 0.15vw;
+                }
+
+                a:hover {
+                    background-color: $color_details;
                 }
 
                 ul {
@@ -60,10 +77,20 @@
                     position: absolute;
 
                     li {
+                        font-family: $font_header;
+                        font-size: calc(0.6em + 0.2vw);
+                        font-weight: lighter;
+                        text-transform: uppercase;
+                        color: $color_principal;
+                        background-color: $color_boxshadow;
                         text-decoration: none;
                         cursor: pointer;
                         display: block;
                         padding: 0.6vh;
+                    }
+
+                    li:hover {
+                        background-color: $color_details;
                     }
                 }
             }

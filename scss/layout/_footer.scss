@@ -1,3 +1,5 @@
+/* FOOTER */
+
 .footer {
     grid-area: footer;
     width: 100vw;
@@ -11,6 +13,7 @@
     justify-content: space-around;
     align-content: center;
     padding: 1vh 0vh;
+    background-color: $color_secondary;
 
     .footer_socialmedia {
         grid-area: footer_socialmedia;
@@ -26,6 +29,10 @@
         text-align: center;
     
         h4 {
+            font-family: $font_footer;
+            font-size: calc(0.6em + 0.75vw);
+            font-weight: 600;
+            color: $color_principal;
             margin: 1vh 0vh;
         }
     }

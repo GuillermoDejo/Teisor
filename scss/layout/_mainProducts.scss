@@ -1,3 +1,5 @@
+/* MAIN PRODUCTS */
+
 .main_products {
     grid-area: main;
     display: grid;
@@ -8,12 +10,14 @@
         "bar ";
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, max-content);
+    background-color: $color_secondary;
 
     .searcher {
         grid-area: searcher;
         display: flex;
         padding: 1vw;
         justify-content: center;
+        background-color: $color_secondary;
 
         div {
             display: grid;
@@ -24,6 +28,8 @@
             padding: 0.5vw;
             justify-items: center;
             align-items: center;
+            background-color: $color_bg;
+            border: 1px solid $color_principal;
 
             img {
                 grid-area: photo;
@@ -35,11 +41,19 @@
                 grid-area: search;
                 border: none;
                 text-align: center;
+                font-family: $font_text;
+                font-size: calc(0.6em + 0.75vw);
+                background-color: $color_bg;
             }
 
             h5 {
                 grid-area: btn_search;
                 margin: 0px;
+                font-family: $font_additionals;
+                font-weight: bold;
+                font-size: calc(0.6em + 0.75vw);
+                text-transform: uppercase;
+                color: $color_principal;
             }
         }
     }
@@ -52,6 +66,7 @@
         padding: 3vw 12vw;
         justify-items: center;
         align-items: center;
+        background-color: $color_secondary;
 
         .card_products {
             height: 400px;
@@ -66,6 +81,10 @@
             align-items: center;
             justify-items: center;
             padding: 0.5vw;
+            font-family: $font_additionals;
+            font-size: calc(0.75em + 0.2vw);
+            background-color: $color_bg;
+            box-shadow: 3px 8px 10px 5px $color_card_detail;
         
             .card_products_photo {
                 grid-area: card_products_photo;
@@ -83,6 +102,8 @@
             
             .card_products_text {
                 grid-area: card_products_text;
+                font-family: $font_text;
+                font-size: calc(0.65em + 0.4vw);
             
                 p {
                     text-align: justify;

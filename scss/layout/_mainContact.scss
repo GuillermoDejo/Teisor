@@ -1,3 +1,5 @@
+/* MAIN CONTACT */
+
 .main_contact {
     grid-area: main;
     display: grid;
@@ -7,10 +9,13 @@
         "bar";
     grid-template-columns: 100vw;
     grid-template-rows: repeat(2, max-content);
+    background-color: $color_secondary;
 
     .contact_content {
         grid-area: content;
         padding: 3vw 15vw;
+        font-family: $font_text;
+        background-color: $color_bg;
     
         .map {
             margin-top: 2em;

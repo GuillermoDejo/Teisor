@@ -1,3 +1,5 @@
+/* MAIN ABOUT US */
+
 .main_aboutus {
     grid-area: main;
     display: grid;
@@ -7,10 +9,14 @@
         "bar";
     grid-template-columns: 100vw;
     grid-template-rows: repeat(2, max-content);
+    background-color: $color_secondary;
 
     .aboutus_content {
         grid-area: aboutus_content;
         padding: 3vw 15vw;
+        font-family: $font_text;
+        font-size: calc(0.4em + 0.9vw);
+        background-color: $color_bg;
 
         .aboutus_photo {
             display: flex;

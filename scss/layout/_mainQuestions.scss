@@ -1,3 +1,5 @@
+/* MAIN QUESTIONS */
+
 .main_questions {
     grid-area: main;
     display: grid;
@@ -7,14 +9,19 @@
         "bar";
     grid-template-columns: 100vw;
     grid-template-rows: repeat(2, max-content);
+    background-color: $color_secondary;
 
     .questions {
         grid-area: questions;
         padding: 3vw 15vw;
         z-index: 1;
+        font-family: $font_text;
+        background-color: $color_bg;
     
         .accordion h2 {
             padding: 1vh;
+            font-size: larger;
+            font-weight:bolder;
         }
     }
 }
