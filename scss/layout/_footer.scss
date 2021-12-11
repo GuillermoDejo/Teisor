@@ -27,8 +27,8 @@
     .footer_info {
         grid-area: footer_info;
         text-align: center;
-    
-        h4 {
+
+        ul li {
             font-family: $font_footer;
             font-size: calc(0.6em + 0.75vw);
             font-weight: 600;

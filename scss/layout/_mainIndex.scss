@@ -45,17 +45,14 @@
     .button {
         grid-area: btn;
         margin: 0px;
-        
-        a {
-            text-decoration: none;
-            padding: 0vw 0.5vh;
-            font-family: $font_additionals;
-            font-size: calc(0.72em + 0.2vw);
-            text-transform: uppercase;
-            color: $color_secondary;
-            background-color: $color_details;
-            border: 0.25vw solid $color_secondary;
-        }
+        text-decoration: none;
+        padding: 0vw 0.5vh;
+        font-family: $font_additionals;
+        font-size: calc(0.6em + 0.8vw);
+        text-transform: uppercase;
+        color: $color_secondary;
+        background-color: $color_details;
+        border: 0.25vw solid $color_secondary;
     }    
     
     .cards_index {
@@ -98,6 +95,10 @@
             .card_index_title {
                 grid-area: cardIndexTitle;
                 text-align: center;
+
+                p {
+                    font-size: 3vh;
+                }
             }
             
             .button {
