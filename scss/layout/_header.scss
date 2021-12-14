@@ -64,39 +64,13 @@
                     color: $color_principal;
                     text-decoration: none;
                     cursor: pointer;
-                    padding-right: 0.23vw;
-                    padding-left: 0.23vw;
+                    padding-right: 5px;
+                    padding-left: 5px;
                 }
 
                 a:hover {
                     background-color: $color_details;
                 }
-
-                ul {
-                    display: none;
-                    position: absolute;
-
-                    li {
-                        font-family: $font_header;
-                        font-size: calc(0.6em + 0.2vw);
-                        font-weight: lighter;
-                        text-transform: uppercase;
-                        color: $color_principal;
-                        background-color: $color_boxshadow;
-                        text-decoration: none;
-                        cursor: pointer;
-                        display: block;
-                        padding: 0.6vh;
-                    }
-
-                    li:hover {
-                        background-color: $color_details;
-                    }
-                }
-            }
-
-            li:hover ul {
-                display: block;
             }
         }
     }
